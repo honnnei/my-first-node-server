@@ -13,14 +13,18 @@ http.createServer(function(req, res){
     //console.log(req.url); 
     res.writeHead(200, {'Content-Type': 'text/html'});
     //res.end('Hello World!');
-    res.end(search_keywords);
+    
 
     unsplash.search.photos(search_keywords, 1, 10, { orientation: "portrait" })
     .then(toJson)
     .then(json => {
       // Your code
-      console.log(json);
+      imgUrl = json.results[0].urls.raw;
+      console.log(imgUrl);
+      res.end("<img style=\"width:500px;height:600px;\" src= " + imgUrl + ">");
     });
+
+    
 
 }).listen(8080);
 
