@@ -1,0 +1,23 @@
+{
+  "name": "my-first-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honnnei/my-first-node-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honnnei/my-first-node-server/issues"
+  },
+  "homepage": "https://github.com/honnnei/my-first-node-server#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "unsplash-js": "^6.0.0"
+  }
+}
